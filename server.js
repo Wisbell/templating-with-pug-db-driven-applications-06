@@ -5,28 +5,28 @@ const app = express();
 
 
 let popularPastries = {
-  donut: 30,
-  bread: 20,
-  bagle: 10
+  donut: {price: 30},
+  bread: {price: 20},
+  bagle: {price: 10}
 }
 
-
-app.use(express.static('/'));
+// use __dirname without public folder
+app.use(express.static(__dirname));
 
 // set pug view engine
 app.set('view engine', 'pug')
 
 
 app.get('/', (req, res, next) => {
-  res.render('index')
+  res.render('index', { page: 'index'})
 })
 
 app.get('/about', (req, res, next) => {
-  res.render('about')
+  res.render('about', { page: 'about'})
 })
 
 app.get('/inventory', (req, res, next) => {
-  res.render('inventory', { popularPastries })
+  res.render('inventory', { page: 'inventory', popularPastries })
 })
 
 const port = process.env.PORT || 3000

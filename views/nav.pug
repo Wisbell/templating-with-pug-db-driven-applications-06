@@ -1,8 +1,10 @@
 //- Navbar
 
-ul
+ul.navbar
   li
-    h1 Hometown Bakery
-  li item 1
-  li item 2
-  li item 3
+    a(href="/")
+      h1 Hometown Bakery
+  li
+    a(href="/about" class={'hide-nav-link': page === 'about'}) About
+  li
+    a(href="/inventory" class={'hide-nav-link': page === 'inventory'}) Inventory
