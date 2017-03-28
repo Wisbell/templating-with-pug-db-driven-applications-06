@@ -1,0 +1,25 @@
+{
+  "name": "templating-with-pug-db-driven-applications-06",
+  "version": "1.0.0",
+  "description": "https://github.com/nashville-software-school/node-milestones/blob/master/02-db-driven-applications/exercises/06-templating-pug.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wisbell/templating-with-pug-db-driven-applications-06.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wisbell/templating-with-pug-db-driven-applications-06/issues"
+  },
+  "homepage": "https://github.com/Wisbell/templating-with-pug-db-driven-applications-06#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
+  }
+}
