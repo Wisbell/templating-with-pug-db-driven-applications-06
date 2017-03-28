@@ -4,10 +4,16 @@ const express = require('express');
 const app = express();
 
 
-let popularPastries = {
-  donut: {price: 30},
-  bread: {price: 20},
-  bagle: {price: 10}
+let popularPastries = [
+  {name: "donut", price: '$30'},
+  {name: "bread", price: '$40'},
+  {name: "bagle", price: '$50'},
+  {name: "cookies", price: '$70'},
+  {name: "Cake", price: '$90'},
+]
+
+let getDateInfo = () => {
+  return new Date()
 }
 
 // use __dirname without public folder
@@ -22,7 +28,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/about', (req, res, next) => {
-  res.render('about', { page: 'about'})
+  res.render('about', { page: 'about', date: getDateInfo()})
 })
 
 app.get('/inventory', (req, res, next) => {
