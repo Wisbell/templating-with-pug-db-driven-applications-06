@@ -1,0 +1,8 @@
+//- extend index.pug
+extend layout.pug
+
+block content
+
+  h3 Our Popular Items
+  each item in popularPastries
+    p #{item.name}: #{item.price}

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: orange;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.navbar li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.content {
+  padding-left: 1em;
+}
+
+.bakery {
+  padding-left: 1em;
+}
+
+.hide-nav-link {
+  display: none;
+}
