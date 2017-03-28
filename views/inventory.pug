@@ -1,0 +1,8 @@
+extend index.pug
+
+block content
+
+  h3 Our Popular Items
+  ul
+    each value, key in popularPastries
+      li #{key}: #{value}
